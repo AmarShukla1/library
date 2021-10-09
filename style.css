@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    gap:20px;
+    font-family: monospace;
+    font-size: 18px;
+    
+}
+header{
+  background-color: rgb(180, 143, 188);
+  padding: 10px; 
+  text-align: center;
+}
+footer{
+  
+ background-color: deeppink;
+ padding:10px;
+ margin-top: auto;
+ text-align: center;
+}
+.books-container{
+    margin-top: 50px;
+    display:flex;
+    gap:100px;
+    flex-wrap: wrap;
+}
+.box{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center; 
+  margin:auto;  
+  width:200px;
+  height:200px;
+ 
+  word-break: break-all;
+
+}
+button{
+ 
+background-color: aqua;
+ border-radius: 10px;
+ padding:10px;
+ margin:auto;
+}
+.modal-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top:0;
+  left:0;/*sets the left edge of an element to a unit to the left of the left edge of its nearest positioned ancestor.*/
+  height: 100vh;
+  width: 100vw;/*these are beacuse we had given it absolute in order to be at same position as click me button so by this we set this in middle*/
+  background-color: rgba(0,0,0,0.2);
+  opacity:0;
+  pointer-events: none;/*andar ka click hone dega*/
+  transition:0.5s ease;
+}
+.modal-container.show{/*this is new*/
+ opacity:1;
+ pointer-events: auto;/*wo default*/
+}
+.modal{
+  background-color: #fff;
+  width:600px;
+}
