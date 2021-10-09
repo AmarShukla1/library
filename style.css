@@ -67,3 +67,12 @@ background-color: aqua;
   background-color: #fff;
   width:600px;
 }
+label{
+  font-variant: small-caps;
+
+}
+input{
+ 
+ border-radius: 12px;
+ padding:5px;
+}

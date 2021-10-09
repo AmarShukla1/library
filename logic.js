@@ -22,11 +22,12 @@ modal.classList.remove('show');
 const div=document.createElement('div');
     div.className='box';
     div.innerHTML=document.querySelector('.x').value+'<br>'+document.querySelector('.y').value+'<br>'+document.querySelector('.z').value;
+    document.querySelector('.x').value='';document.querySelector('.y').value='';document.querySelector('.z').value='';
     let str=random();
     div.style.backgroundColor=str;
-    // div.addEventListener('click',function(){
-    //    div.remove();
-    // });
+    div.addEventListener('click',function(){
+       div.remove();
+    });
     container.appendChild(div); 
 });
 
