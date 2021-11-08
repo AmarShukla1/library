@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href='style.css'>
-    <script src='logic.js' defer></script>
-</head>
-<body>
-    <header>Library</header>    
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic.js" defer></script>
+  </head>
+  <body>
+    <header>Library</header>
     <button>Click to Add</button>
-    <div class='modal-container'>
-    <div class='modal'>
+    <div class="modal-container">
+      <div class="modal">
         <h1>Books</h1>
-        <label for="fname">Book:</label>
-        <input type="text" name="fname" class='x'><br><br>
-        <label for="Author">Author:</label>
-        <input type="text" name="author" class='y'><br><br>
-        <label for="pages">Pages:</label>
-        <input type="text" name="pages" class='z'><br><br>
-        
-        <button class='close'>Close</button>
-    </div>
-</div>
-    <div class='books-container'>
-    </div>
-    <footer>Made by Amar Shukla</footer>
+        <form onsubmit="return false">
+          <label for="fname">Book:</label>
+          <input type="text" name="fname" class="x" required /><br /><br />
+          <label for="Author">Author:</label>
+          <input type="text" name="author" class="y" required /><br /><br />
+          <label for="pages">Pages:</label>
+          <input type="text" name="pages" class="z" required /><br /><br />
 
-</body>
+          <button class="close">Close</button>
+        </form>
+      </div>
+    </div>
+    <div class="books-container"></div>
+    <footer>Made by Amar Shukla</footer>
+  </body>
 </html>
