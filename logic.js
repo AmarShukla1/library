@@ -2,6 +2,9 @@
 //although probably right.But typically the ui reflects the data not be the sole place where it is.
 //therefore will add an object oriented way.
 
+//in this added validation also and not added live inline validation the one which we see in facebook or google forms.
+//but this is of the sort that if we click submit we can get the errors.the live one we can code as well.
+//was given a project in odin forms section to code up live inline validation,will do it later.Its easy.
 let mylibrary = [];
 
 function createbook(name, title, pages) {
