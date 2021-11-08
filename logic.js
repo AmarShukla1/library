@@ -27,6 +27,7 @@ button.addEventListener("click", function () {
   document.querySelector(".x").value = "";
   document.querySelector(".y").value = "";
   document.querySelector(".z").value = "";
+  document.querySelector(".p").value = "";
 });
 
 const form = document.querySelector("form");
