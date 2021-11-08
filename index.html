@@ -20,7 +20,14 @@
           <label for="Author">Author:</label>
           <input type="text" name="author" class="y" required /><br /><br />
           <label for="pages">Pages:</label>
-          <input type="text" name="pages" class="z" required /><br /><br />
+          <input
+            type="number"
+            name="pages"
+            class="z"
+            min="0"
+            max="9999"
+            required
+          /><br /><br />
 
           <button class="close">Close</button>
         </form>
